@@ -6,8 +6,10 @@ router = APIRouter()
 
 class AnalyzeRequest(BaseModel):
     text: str
+    model: str = "en_core_web_sm"
+
 
 @router.post("/analyze")
 async def analyze(request: AnalyzeRequest):
-    result = analyze_text(request.text)
-    return result
+    return analyze_text(request.text, model=request.model)
+
