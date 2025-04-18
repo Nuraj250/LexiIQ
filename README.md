@@ -1,6 +1,6 @@
-# 🧠 Smart Text Analyzer
+# 🚀 LexiIQ 
 
-Smart Text Analyzer is an AI-powered NLP web app that processes natural language using advanced techniques from spaCy and TextBlob. It supports multilingual analysis, live typing, token visualization, sentiment charting, entity filtering, and export to JSON/PDF all packed into a modern React + FastAPI fullstack project.
+LexiIQ  is an AI-powered NLP web app that processes natural language using advanced techniques from spaCy and TextBlob. It supports multilingual analysis, live typing, token visualization, sentiment charting, entity filtering, and export to JSON/PDF all packed into a modern React + FastAPI fullstack project.
 
 ---
 
