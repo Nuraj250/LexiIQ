@@ -13,10 +13,10 @@ const EntityFilter: React.FC<Props> = ({ entities, onFilterChange }) => {
   useEffect(() => {
     const uniqueTypes = Array.from(new Set(entities.map(e => e.label)));
     setTypes(uniqueTypes);
-    setActiveTypes(uniqueTypes); // show all by default
-    onFilterChange(uniqueTypes); // sync on mount
-  }, [entities]);
-
+    setActiveTypes(uniqueTypes);
+    onFilterChange(uniqueTypes);
+  }, [entities, onFilterChange]); // <- add onFilterChange here
+  
   const toggleType = (type: string) => {
     const updated = activeTypes.includes(type)
       ? activeTypes.filter(t => t !== type)
